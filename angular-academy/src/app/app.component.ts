@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-academy';
+  data = {
+    title: 'angular',
+    name: 'pp',
+    adress: 'gg'
+  };
+
+  onImgCliked() {
+    alert('Hello Logo');
+  };
+
+  onKeyUp(newTitle: string) {
+    this.data.title = newTitle;
+  };
+
 }
